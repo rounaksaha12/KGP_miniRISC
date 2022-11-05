@@ -18,16 +18,16 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module Register(D,clk,rst,RegWrEnbl,Q);
-input [31:0] D;
-input clk,rst;
-output [31:0] Q;
+module Register #(parameter WIDTH=32) (D,clk,rst,RegWrEnbl,Q);
+input [WIDTH-1:0] D;
+input clk,rst,RegWrEnbl;
+output reg [WIDTH-1:0] Q;
 
 always@(posedge clk or posedge rst)
     begin
         if(rst)
 				begin
-					Q<=32'd0;
+					Q<=0;
 				end
         else
 				if(RegWrEnbl)

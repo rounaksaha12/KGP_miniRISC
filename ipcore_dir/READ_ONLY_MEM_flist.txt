@@ -1,0 +1,17 @@
+# Output products list for <READ_ONLY_MEM>
+READ_ONLY_MEM/blk_mem_gen_v7_3_readme.txt
+READ_ONLY_MEM/doc/blk_mem_gen_v7_3_vinfo.html
+READ_ONLY_MEM/doc/pg058-blk-mem-gen.pdf
+READ_ONLY_MEM.asy
+READ_ONLY_MEM.gise
+READ_ONLY_MEM.mif
+READ_ONLY_MEM.ngc
+READ_ONLY_MEM.sym
+READ_ONLY_MEM.v
+READ_ONLY_MEM.veo
+READ_ONLY_MEM.xco
+READ_ONLY_MEM.xise
+READ_ONLY_MEM_flist.txt
+READ_ONLY_MEM_xmdf.tcl
+_xmsgs/pn_parser.xmsgs
+summary.log

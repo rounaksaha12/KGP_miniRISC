@@ -23,15 +23,187 @@
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
     <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ADDR_32bit.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ADDR_32bit.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ADDR_32bit.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU_32bit.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="ALU_32bit.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="ALU_32bit.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="ALU_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="ALU_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="AND_32bit.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="AND_32bit.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="AND_32bit.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BranchDecider.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="BranchDecider.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="BranchDecider.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CPU_TOP_MODULE.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="CPU_TOP_MODULE.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="CPU_TOP_MODULE.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="DIFF_32bit.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="DIFF_32bit.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="DIFF_32bit.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="IS_ZERO.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="IS_ZERO.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="IS_ZERO.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="JumpDecider.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="JumpDecider.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="JumpDecider.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX_2to1.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MUX_2to1.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="MUX_2to1.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX_4to1.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MUX_4to1.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="MUX_4to1.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="RegFile.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="RegFile.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="RegFile.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Register.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="Register.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="Register.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SHIFTER.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SHIFTER.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SHIFTER.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="SIGN_EXTND.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="SIGN_EXTND.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="SIGN_EXTND.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="TWOS_COMPL_32bit.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="TWOS_COMPL_32bit.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="TWOS_COMPL_32bit.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="XOR_32bit.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="XOR_32bit.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="XOR_32bit.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="bram_check.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="bram_check.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="bram_check.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="bram_check_2_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="bram_check_2_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="bram_check_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="bram_check_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="bram_check_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="bram_check_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="bram_write_check_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="bram_write_check_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="bram_write_check_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="bram_write_check_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="branch_dec_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="ipcore_dir/coregen.log"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="jump_dec_tb_isim_beh.exe"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="register_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="register_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="shifter_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="shifter_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1667542991" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1667542991">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1667663394" xil_pn:in_ck="6621348033434502622" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1667663394">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ADDR_32bit.v"/>
+      <outfile xil_pn:name="ALU_32bit.v"/>
+      <outfile xil_pn:name="ALU_tb.v"/>
+      <outfile xil_pn:name="AND_32bit.v"/>
+      <outfile xil_pn:name="BranchDecider.v"/>
+      <outfile xil_pn:name="CPU_TOP_MODULE.v"/>
+      <outfile xil_pn:name="DIFF_32bit.v"/>
+      <outfile xil_pn:name="IS_ZERO.v"/>
+      <outfile xil_pn:name="JumpDecider.v"/>
+      <outfile xil_pn:name="MUX_2to1.v"/>
+      <outfile xil_pn:name="MUX_4to1.v"/>
+      <outfile xil_pn:name="RegFile.v"/>
+      <outfile xil_pn:name="Register.v"/>
+      <outfile xil_pn:name="SHIFTER.v"/>
+      <outfile xil_pn:name="SIGN_EXTND.v"/>
+      <outfile xil_pn:name="TWOS_COMPL_32bit.v"/>
+      <outfile xil_pn:name="XOR_32bit.v"/>
+      <outfile xil_pn:name="bram_check.v"/>
+      <outfile xil_pn:name="bram_check_2_tb.v"/>
+      <outfile xil_pn:name="bram_write_check.v"/>
+      <outfile xil_pn:name="bram_write_check_tb.v"/>
+      <outfile xil_pn:name="branch_dec_tb.v"/>
+      <outfile xil_pn:name="jump_dec_tb.v"/>
+      <outfile xil_pn:name="register_tb.v"/>
+      <outfile xil_pn:name="shifter_tb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1667663397" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="926959119590199861" xil_pn:start_ts="1667663397">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1667663397" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-229740909577757715" xil_pn:start_ts="1667663397">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1667659426" xil_pn:in_ck="8625849582176093741" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="2582662968389951500" xil_pn:start_ts="1667659426">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ipcore_dir/READ_ONLY_MEM.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/READ_ONLY_MEM.v"/>
+      <outfile xil_pn:name="ipcore_dir/READ_WRITE_MEM.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/READ_WRITE_MEM.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1667663397" xil_pn:in_ck="-1674347769772130900" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1667663397">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ADDR_32bit.v"/>
+      <outfile xil_pn:name="ALU_32bit.v"/>
+      <outfile xil_pn:name="ALU_tb.v"/>
+      <outfile xil_pn:name="AND_32bit.v"/>
+      <outfile xil_pn:name="BranchDecider.v"/>
+      <outfile xil_pn:name="CPU_TOP_MODULE.v"/>
+      <outfile xil_pn:name="DIFF_32bit.v"/>
+      <outfile xil_pn:name="IS_ZERO.v"/>
+      <outfile xil_pn:name="JumpDecider.v"/>
+      <outfile xil_pn:name="MUX_2to1.v"/>
+      <outfile xil_pn:name="MUX_4to1.v"/>
+      <outfile xil_pn:name="RegFile.v"/>
+      <outfile xil_pn:name="Register.v"/>
+      <outfile xil_pn:name="SHIFTER.v"/>
+      <outfile xil_pn:name="SIGN_EXTND.v"/>
+      <outfile xil_pn:name="TWOS_COMPL_32bit.v"/>
+      <outfile xil_pn:name="XOR_32bit.v"/>
+      <outfile xil_pn:name="bram_check.v"/>
+      <outfile xil_pn:name="bram_check_2_tb.v"/>
+      <outfile xil_pn:name="bram_write_check.v"/>
+      <outfile xil_pn:name="bram_write_check_tb.v"/>
+      <outfile xil_pn:name="branch_dec_tb.v"/>
+      <outfile xil_pn:name="ipcore_dir/READ_ONLY_MEM.v"/>
+      <outfile xil_pn:name="jump_dec_tb.v"/>
+      <outfile xil_pn:name="register_tb.v"/>
+      <outfile xil_pn:name="shifter_tb.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1667663399" xil_pn:in_ck="3131792397831131747" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="8534711160577202982" xil_pn:start_ts="1667663397">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="bram_write_check_tb_beh.prj"/>
+      <outfile xil_pn:name="bram_write_check_tb_isim_beh.exe"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1667663464" xil_pn:in_ck="1401794648882092977" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2930575673096778889" xil_pn:start_ts="1667663464">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="bram_write_check_tb_isim_beh.wdb"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:name="TRAN_SubProjectAbstractToPreProxy">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
 
 </generated_project>

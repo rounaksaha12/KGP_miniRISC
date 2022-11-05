@@ -30,5 +30,11 @@ assign hardwired_one=1'd1;
 not JumpDecider_n1(not_carry,carry);
 and JumpDecider_a1(LongBr_out,LongBr,LongBrMUX_out);
 MUX_4to1 #(.WIDTH(1)) LongBrMUX (.in0(hardwired_one),.in1(hardwired_one),.in2(carry),.in3(not_carry),.sel(LongBrType),.out(LongBrMUX_out));
+/*
+00 unconditional branch/jump
+01 branch and link
+10 branch on carry
+11 branch on not carry
+*/
 
 endmodule

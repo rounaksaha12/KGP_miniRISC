@@ -1,0 +1,4 @@
+verilog work "Register.v"
+verilog work "ipcore_dir/READ_ONLY_MEM.v"
+verilog work "ADDR_32bit.v"
+verilog work "bram_check.v"

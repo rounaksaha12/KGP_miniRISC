@@ -20,8 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 module TWOS_COMPL_32bit(a,TWOS_COMPLout);
 input [31:0] a;
-output [31:0] TWOS_COMLout;
+output [31:0] TWOS_COMPLout;
 
-assign TWOS_COMLout=~a+1;
+assign TWOS_COMPLout=~a+1;
 
 endmodule

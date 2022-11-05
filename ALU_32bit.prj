@@ -1,0 +1,8 @@
+verilog work "XOR_32bit.v"
+verilog work "SHIFTER.v"
+verilog work "MUX_4to1.v"
+verilog work "MUX_2to1.v"
+verilog work "DIFF_32bit.v"
+verilog work "AND_32bit.v"
+verilog work "ADDR_32bit.v"
+verilog work "ALU_32bit.v"

@@ -1,0 +1,5 @@
+set -tmpdir "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/xst/projnav.tmp"
+set -xsthdpdir "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/xst"
+elaborate
+-ifn IS_ZERO.prj
+-ifmt mixed

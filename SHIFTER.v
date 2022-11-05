@@ -19,6 +19,7 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module SHIFTER(a,ShiftTypeSHIFTER,ShiftAmntSHIFTER,ShifterEnblSHIFTER,SHIFTERout);
+input ShifterEnblSHIFTER;
 input [31:0] a;
 input [1:0] ShiftTypeSHIFTER;
 input [4:0] ShiftAmntSHIFTER;
@@ -33,12 +34,22 @@ shift type:
 
 always@(*)
 begin
-case(ShiftTypeSHIFTER)
-		2'b00: SHIFTERout=a<<ShiftAmntSHIFTER;
-		2'b01: SHIFTERout=a<<<ShiftAmntSHIFTER;
-		2'b10: SHIFTERout=a>>ShiftAmntSHIFTER;
-		2'b11: SHIFTERout=a>>>ShiftAmntSHIFTER;
-endcase
+
+if(!ShifterEnblSHIFTER)
+begin
+	SHIFTERout=a;
+end
+
+else
+begin
+	case(ShiftTypeSHIFTER)
+			2'b00: SHIFTERout=a<<ShiftAmntSHIFTER;
+			2'b01: SHIFTERout=a<<<ShiftAmntSHIFTER;
+			2'b10: SHIFTERout=a>>ShiftAmntSHIFTER;
+			2'b11: SHIFTERout=$signed(a)>>>ShiftAmntSHIFTER;
+	endcase
+end
+
 end
 
 endmodule

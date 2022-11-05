@@ -1,0 +1,16 @@
+# Output products list for <READ_WRITE_MEM>
+READ_WRITE_MEM/blk_mem_gen_v7_3_readme.txt
+READ_WRITE_MEM/doc/blk_mem_gen_v7_3_vinfo.html
+READ_WRITE_MEM/doc/pg058-blk-mem-gen.pdf
+READ_WRITE_MEM.asy
+READ_WRITE_MEM.gise
+READ_WRITE_MEM.ngc
+READ_WRITE_MEM.sym
+READ_WRITE_MEM.v
+READ_WRITE_MEM.veo
+READ_WRITE_MEM.xco
+READ_WRITE_MEM.xise
+READ_WRITE_MEM_flist.txt
+READ_WRITE_MEM_xmdf.tcl
+_xmsgs/pn_parser.xmsgs
+summary.log

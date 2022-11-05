@@ -19,10 +19,13 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module ADDR_32bit(a,b,c_in,ADDRout,ADDRc_out);
-input [31:0] a,b,c_in;
+input [31:0] a,b;
+input c_in;
 output [31:0] ADDRout;
+output ADDRc_out;
 
-assign ADDRout=a+b+c_in;
-assign ADDRc_out=0; /*hardcoded dummy output, will be corrected when this module gets replaced by CLA*/
+assign {ADDRc_out,ADDRout}=a+b+c_in;
+/*assign ADDRc_out=0; */ /*hardcoded dummy output, will be corrected when this module gets replaced by CLA*/ 
+/*change made on Nov 3 23:12*/
 
 endmodule

@@ -18,17 +18,27 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module RegFile(clk,rst,rsAdd,rtAdd,wrAdd,wrData,wrEnable,rsOut,rtOut);
+module RegFile(clk,rst,rsAdd,rtAdd,wrAdd,wrData,wrEnable,rsOut,rtOut,/**/r0,r1,r2,r3,r4,r5/**/);
 input clk,rst;
 input [4:0] rsAdd,rtAdd,wrAdd;
 input [31:0] wrData;
 input wrEnable;
 output [31:0] rsOut,rtOut;
+output [31:0] r0,r1,r2,r3,r4,r5;
 
 reg [31:0] Registers[31:0];
 
 assign rsOut=Registers[rsAdd];
 assign rtOut=Registers[rtAdd];
+
+/**/
+assign r0=Registers[0];
+assign r1=Registers[1];
+assign r2=Registers[2];
+assign r3=Registers[3];
+assign r4=Registers[4];
+assign r5=Registers[5];
+/**/
 
 always@(posedge clk or posedge rst)
 begin

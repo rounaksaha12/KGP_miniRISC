@@ -18,15 +18,22 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module CPU_TOP_MODULE(clk,rst);
+module CPU_TOP_MODULE(clk,rst,/**/RegWrite,ImmSel,ALUSrc,CompEnbl,ShiftAmntSel,ShiftEnbl,ShortBr,LongBr,MemRead,MemWrite,BranchReg,ALUOp,RegDst,ShiftType,BranchType,JumpType,MemToReg,r0,r1,r2,r3,r4,r5/**/);
 input clk,rst;
+output [31:0] r0,r1,r2,r3,r4,r5;
 
 wire [31:0] PC_IN,PC_OUT,INSTRUCTION,READ_REG1,READ_REG2,IMM_16BIT_SE/*16 bit immediate sign extended*/,IMM_21BIT_SE/*32 bit immediate sign extended*/,IMM_To_ALU,ALUSrcA,ALUSrcB,ALU_RES,BRANCH_DECN,JUMP_DECN,PC_PLUS_4,OFFSET,PC_PLUS_4_PLUS_OFFSET,REG_WRITE_DATA,MEM_READ_DATA;
 wire [4:0] WRITE_REG,SHIFT_AMNT;
 
 /* Control signals*/
-wire RegWrite,ImmSel,ALUSrc,CompEnbl,ShiftAmntSel,ShiftEnbl,ShortBr,LongBr,MemRead,MemWrite,BranchReg,ALU_RES_ZERO,ALU_RES_MSB,ALU_RES_CARRY,CARRY_FLAG,BRANCH_DECIDE_SEL,JUMP_DECIDE_SEL;
-wire [1:0] ALUOp,RegDst,ShiftType,BranchType,JumpType,MemToReg;
+wire /**//*RegWrite,ImmSel,ALUSrc,CompEnbl,ShiftAmntSel,ShiftEnbl,ShortBr,LongBr,MemRead,MemWrite,BranchReg,*//**/ALU_RES_ZERO,ALU_RES_MSB,ALU_RES_CARRY,CARRY_FLAG,BRANCH_DECIDE_SEL,JUMP_DECIDE_SEL;
+/**//*wire [1:0] ALUOp,RegDst,ShiftType,BranchType,JumpType,MemToReg;*//**/
+
+/**/
+/*control signals*/
+input RegWrite,ImmSel,ALUSrc,CompEnbl,ShiftAmntSel,ShiftEnbl,ShortBr,LongBr,MemRead,MemWrite,BranchReg;
+input [1:0] ALUOp,RegDst,ShiftType,BranchType,JumpType,MemToReg;
+/**/
 
 /* Program Counter */
 Register PC(.D(PC_IN),.clk(clk),.rst(rst),.RegWrEnbl(1'b1),.Q(PC_OUT));
@@ -39,15 +46,15 @@ READ_ONLY_MEM I_CACHE (
 );
 
 /* Register file write selector MUX */
-MUX_4to1 #(.WIDTH(5)) REGISTER_WRITE_SELECTOR_MUX(.in0(INSTRUCTION[20:16]),.in1(INSTRUCTION[25:21]),.in2(5'b11111),.in3(/*DONT CARE*/5'b00000),.out(WRITE_REG),.sel(RegDst));
+MUX_4to1 #(.WIDTH(5)) REGISTER_WRITE_SELECTOR_MUX(.in0(INSTRUCTION[25:21]),.in1(INSTRUCTION[20:16]),.in2(5'b11111),.in3(/*DONT CARE*/5'b00000),.out(WRITE_REG),.sel(RegDst));
 
 /* Register file */
-RegFile REG_FILE(.clk(clk),.rst(rst),.rsAdd(INSTRUCTION[25:21]),.rtAdd(INSTRUCTION[20:16]),.wrAdd(WRITE_REG),.wrData(REG_WRITE_DATA),.wrEnable(RegWrite),.rsOut(READ_REG1),.rtOut(READ_REG2));
+RegFile REG_FILE(.clk(clk),.rst(rst),.rsAdd(INSTRUCTION[25:21]),.rtAdd(INSTRUCTION[20:16]),.wrAdd(WRITE_REG),.wrData(REG_WRITE_DATA),.wrEnable(RegWrite),.rsOut(READ_REG1),.rtOut(READ_REG2),/**/.r0(r0),.r1(r1),.r2(r2),.r3(r3),.r4(r4),.r5(r5)/**/);
 /* regfile remaining wires: write data */
 
 /* Immdiate field sign extender modules */
 SIGN_EXTND IMM_SE_16(.in(INSTRUCTION[15:0]),.out(IMM_16BIT_SE));
-SIGN_EXTND IMM_SE_21(.in(INSTRUCTION[21:0]),.out(IMM_21BIT_SE));
+SIGN_EXTND #(.INPUT_WIDTH(21)) IMM_SE_21(.in(INSTRUCTION[20:0]),.out(IMM_21BIT_SE));
 
 /* Immediate selector MUX*/
 MUX_2to1 IMM_SELECTOR_MUX(.in0(IMM_21BIT_SE),.in1(IMM_16BIT_SE),.out(IMM_To_ALU),.sel(ImmSel));
@@ -59,7 +66,7 @@ MUX_2to1 ALUsrcB_SELECTOR_MUX(.in0(READ_REG2),.in1(IMM_To_ALU),.out(ALUSrcB),.se
 MUX_2to1 ALUsrcA_SELECTOR_MUX(.in0(READ_REG1),.in1(32'd0),.out(ALUSrcA),.sel(CompEnbl));
 
 /* ALU shift amount selector MUX */
-MUX_2to1 #(.WIDTH(5)) ALUshiftamnt_SELECTOR_MUX(.in0(INSTRUCTION[10:6]/*shamt*/),.in1(READ_REG2),.out(SHIFT_AMNT),.sel(ShiftAmntSel));
+MUX_2to1 #(.WIDTH(5)) ALUshiftamnt_SELECTOR_MUX(.in0(INSTRUCTION[10:6]/*shamt*/),.in1(READ_REG2[4:0]),.out(SHIFT_AMNT),.sel(ShiftAmntSel));
 
 
 /* main ALU */
@@ -84,7 +91,7 @@ READ_WRITE_MEM DATA_MEM (
   .ena(1'b1), // input ena
   /* does the enable pin allow read? */
   .wea(MemWrite), // input [0 : 0] wea
-  .addra(ALU_RES), // input [12 : 0] addra
+  .addra(ALU_RES[12:0]), // input [12 : 0] addra
   .dina(READ_REG2), // input [31 : 0] dina
   .douta(MEM_READ_DATA) // output [31 : 0] douta
 );

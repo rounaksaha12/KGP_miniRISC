@@ -21,8 +21,8 @@
 module ALU_32bit(a,b,AddrSrcBSel,PrimaryOutputSel,ShifterInputSel,ShiftTypeALU,ShiftAmntALU,ShifterEnblALU,ALUOut,ALUc_out,MSB,ALUzero);
 input [31:0] a,b;
 input [4:0] ShiftAmntALU;
-input [1:0] ShifterInputSel,ShiftTypeALU,PrimaryOutputSel;
-input AddrSrcBSel,ShifterEnblALU;
+input [1:0] ShiftTypeALU,PrimaryOutputSel;
+input AddrSrcBSel,ShifterEnblALU,ShifterInputSel;
 
 output [31:0] ALUOut;
 output MSB,ALUzero,ALUc_out;
@@ -39,7 +39,7 @@ AND_32bit AND_ALU(.a(a),.b(b),.ANDout(ANDoutALU));
 XOR_32bit XOR_ALU(.a(a),.b(b),.XORout(XORoutALU));
 DIFF_32bit DIFF_ALU(.a(a),.b(b),.DIFFout(DIFFoutALU));
 
-MUX_4to1 PrimaryOutputMUX(.in1(ADDRoutALU),.in3(ANDoutALU),.in2(XORoutALU),.in0(DIFFoutALU),.out(PrimaryOutput),.sel(PrimaryOutputSel));
+MUX_4to1 PrimaryOutputMUX(.in1(ADDRoutALU),.in2(ANDoutALU),.in3(XORoutALU),.in0(DIFFoutALU),.out(PrimaryOutput),.sel(PrimaryOutputSel));
 MUX_2to1 ShifterInputMUX(.in0(PrimaryOutput),.in1(a),.out(ShifterInput),.sel(ShifterEnblALU)); 
 
 /*

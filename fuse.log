@@ -1,29 +1,66 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/bram_write_check_tb_isim_beh.exe -prj /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/bram_write_check_tb_beh.prj work.bram_write_check_tb work.glbl 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/top_check_primary_tb_isim_beh.exe -prj /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/top_check_primary_tb_beh.prj work.top_check_primary_tb work.glbl 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/XOR_32bit.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/SHIFTER.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/MUX_4to1.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/MUX_2to1.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/DIFF_32bit.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/AND_32bit.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/ADDR_32bit.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/SIGN_EXTND.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/Register.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/RegFile.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/JumpDecider.v" into library work
 Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/ipcore_dir/READ_WRITE_MEM.v" into library work
-Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/bram_write_check.v" into library work
-Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/bram_write_check_tb.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/ipcore_dir/READ_ONLY_MEM.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/BranchDecider.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/ALU_32bit.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_TOP_MODULE.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/top_check_primary_tb.v" into library work
 Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 84088 KB
-Fuse CPU Usage: 1140 ms
+Fuse Memory Usage: 85096 KB
+Fuse CPU Usage: 1270 ms
+Compiling module Register
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
+Compiling module READ_ONLY_MEM
+Compiling module MUX_4to1(WIDTH=5)
+Compiling module RegFile
+Compiling module SIGN_EXTND
+Compiling module SIGN_EXTND(INPUT_WIDTH=21)
+Compiling module MUX_2to1
+Compiling module MUX_2to1(WIDTH=5)
+Compiling module ADDR_32bit
+Compiling module AND_32bit
+Compiling module XOR_32bit
+Compiling module DIFF_32bit
+Compiling module MUX_4to1
+Compiling module SHIFTER
+Compiling module ALU_32bit
 Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
 Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
 Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
 Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
 Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="spart...
 Compiling module READ_WRITE_MEM
-Compiling module bram_write_check
-Compiling module bram_write_check_tb
+Compiling module Register(WIDTH=1)
+Compiling module MUX_4to1(WIDTH=1)
+Compiling module BranchDecider
+Compiling module JumpDecider
+Compiling module CPU_TOP_MODULE
+Compiling module top_check_primary_tb
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 2 sub-compilation(s) to finish...
-Compiled 9 Verilog Units
-Built simulation executable /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/bram_write_check_tb_isim_beh.exe
-Fuse Memory Usage: 647592 KB
-Fuse CPU Usage: 1180 ms
-GCC CPU Usage: 1160 ms
+Waiting for 25 sub-compilation(s) to finish...
+Compiled 32 Verilog Units
+Built simulation executable /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/top_check_primary_tb_isim_beh.exe
+Fuse Memory Usage: 648524 KB
+Fuse CPU Usage: 1360 ms
+GCC CPU Usage: 3340 ms

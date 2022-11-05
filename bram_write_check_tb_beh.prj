@@ -1,4 +1,0 @@
-verilog work "ipcore_dir/READ_WRITE_MEM.v"
-verilog work "bram_write_check.v"
-verilog work "bram_write_check_tb.v"
-verilog work "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

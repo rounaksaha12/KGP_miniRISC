@@ -28,7 +28,7 @@ output [31:0] rsOut,rtOut;
 reg [31:0] Registers[31:0];
 
 assign rsOut=Registers[rsAdd];
-assign rtOUt=Registers[rtAdd];
+assign rtOut=Registers[rtAdd];
 
 always@(posedge clk or posedge rst)
 begin

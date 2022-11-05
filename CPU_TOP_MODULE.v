@@ -39,7 +39,7 @@ READ_ONLY_MEM I_CACHE (
 );
 
 /* Register file write selector MUX */
-MUX_4to1 #(.WIDTH(5)) REGISTER_WRITE_SELECTOR_MUX(.in0(INSTRUCTION[20:16]),.in1(INSTRUCTION[25:21]),.in2(5'b11111),.in3(/*DONT CARE*/5'b000000),.out(WRITE_REG),.sel(RegDst));
+MUX_4to1 #(.WIDTH(5)) REGISTER_WRITE_SELECTOR_MUX(.in0(INSTRUCTION[20:16]),.in1(INSTRUCTION[25:21]),.in2(5'b11111),.in3(/*DONT CARE*/5'b00000),.out(WRITE_REG),.sel(RegDst));
 
 /* Register file */
 RegFile REG_FILE(.clk(clk),.rst(rst),.rsAdd(INSTRUCTION[25:21]),.rtAdd(INSTRUCTION[20:16]),.wrAdd(WRITE_REG),.wrData(REG_WRITE_DATA),.wrEnable(RegWrite),.rsOut(READ_REG1),.rtOut(READ_REG2));
@@ -50,10 +50,10 @@ SIGN_EXTND IMM_SE_16(.in(INSTRUCTION[15:0]),.out(IMM_16BIT_SE));
 SIGN_EXTND IMM_SE_21(.in(INSTRUCTION[21:0]),.out(IMM_21BIT_SE));
 
 /* Immediate selector MUX*/
-MUX_2to1 IMM_SELECTOR_MUX(.in0(IMM_21BIT_SE),.in1(IMM_16BIT_SE),.out(IMM_to_ALU),.sel(ImmSel));
+MUX_2to1 IMM_SELECTOR_MUX(.in0(IMM_21BIT_SE),.in1(IMM_16BIT_SE),.out(IMM_To_ALU),.sel(ImmSel));
 
 /* ALU source B selector MUX */
-MUX_2to1 ALUsrcB_SELECTOR_MUX(.in0(READ_REG2),.in1(IMM_to_ALU),.out(ALUSrcB),.sel(ALUSrc));
+MUX_2to1 ALUsrcB_SELECTOR_MUX(.in0(READ_REG2),.in1(IMM_To_ALU),.out(ALUSrcB),.sel(ALUSrc));
 
 /* ALU source A selector MUX */
 MUX_2to1 ALUsrcA_SELECTOR_MUX(.in0(READ_REG1),.in1(32'd0),.out(ALUSrcA),.sel(CompEnbl));

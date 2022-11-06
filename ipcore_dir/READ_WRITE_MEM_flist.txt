@@ -4,6 +4,7 @@ READ_WRITE_MEM/doc/blk_mem_gen_v7_3_vinfo.html
 READ_WRITE_MEM/doc/pg058-blk-mem-gen.pdf
 READ_WRITE_MEM.asy
 READ_WRITE_MEM.gise
+READ_WRITE_MEM.mif
 READ_WRITE_MEM.ngc
 READ_WRITE_MEM.sym
 READ_WRITE_MEM.v

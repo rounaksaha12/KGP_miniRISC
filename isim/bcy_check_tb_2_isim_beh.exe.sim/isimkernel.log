@@ -1,0 +1,29 @@
+Command line:
+   bcy_check_tb_2_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58219
+
+Mon Nov  7 00:28:04 2022
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 188.69 Meg
+
+ Total Signals          : 554
+ Total Nets             : 2671
+ Total Signal Drivers   : 201
+ Total Blocks           : 68
+ Total Primitive Blocks : 57
+ Total Processes        : 227
+ Total Traceable Variables  : 697
+ Total Scalar Nets and Variables : 483439
+Total Line Count : 1195
+
+ Total Simulation Time: 0.09 sec
+
+ Current Memory Usage: 264.192 Meg
+
+Mon Nov  7 01:11:26 2022
+

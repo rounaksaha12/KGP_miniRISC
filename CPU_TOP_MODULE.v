@@ -18,11 +18,14 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module CPU_TOP_MODULE(clk,rst,/**/RegWrite,ImmSel,ALUSrc,CompEnbl,ShiftAmntSel,ShiftEnbl,ShortBr,LongBr,MemRead,MemWrite,BranchReg,ALUOp,RegDst,ShiftType,BranchType,JumpType,MemToReg,r0,r1,r2,r3,r4,r5/**/);
-input clk,rst;
-output [31:0] r0,r1,r2,r3,r4,r5;
 
-wire [31:0] PC_IN,PC_OUT,INSTRUCTION,READ_REG1,READ_REG2,IMM_16BIT_SE/*16 bit immediate sign extended*/,IMM_21BIT_SE/*32 bit immediate sign extended*/,IMM_To_ALU,ALUSrcA,ALUSrcB,ALU_RES,BRANCH_DECN,JUMP_DECN,PC_PLUS_4,OFFSET,PC_PLUS_4_PLUS_OFFSET,REG_WRITE_DATA,MEM_READ_DATA;
+/*major changes nov 6 11:40*/
+
+module CPU_TOP_MODULE(clk,rst,/**/RegWrite,ImmSel,ALUSrc,CompEnbl,ShiftAmntSel,ShiftEnbl,ShortBr,LongBr,MemRead,MemWrite,BranchReg,ALUOp,RegDst,ShiftType,BranchType,JumpType,MemToReg,r0,r1,r2,r3,r4,r5,r31/**/,/***/PC_OUT/***/);
+input clk,rst;
+output [31:0] r0,r1,r2,r3,r4,r5,r31,/***/PC_OUT/***/;
+
+wire [31:0] PC_IN,/***//*PC_OUT,*//***/INSTRUCTION,READ_REG1,READ_REG2,IMM_16BIT_SE/*16 bit immediate sign extended*/,IMM_21BIT_SE/*32 bit immediate sign extended*/,IMM_To_ALU,ALUSrcA,ALUSrcB,ALU_RES,BRANCH_DECN,JUMP_DECN,PC_PLUS_4,OFFSET,PC_PLUS_4_PLUS_OFFSET,REG_WRITE_DATA,MEM_READ_DATA;
 wire [4:0] WRITE_REG,SHIFT_AMNT;
 
 /* Control signals*/
@@ -35,13 +38,21 @@ input RegWrite,ImmSel,ALUSrc,CompEnbl,ShiftAmntSel,ShiftEnbl,ShortBr,LongBr,MemR
 input [1:0] ALUOp,RegDst,ShiftType,BranchType,JumpType,MemToReg;
 /**/
 
+/***/
+wire [11:0] I_CACHE_ADDR_IN;
+/***/
+
 /* Program Counter */
 Register PC(.D(PC_IN),.clk(clk),.rst(rst),.RegWrEnbl(1'b1),.Q(PC_OUT));
+
+/***/
+MUX_2to1 #(.WIDTH(12)) I_CACHE_ADDR_SELECTOR_MUX(.in0(PC_IN[11:0]),.in1(12'd0),.out(I_CACHE_ADDR_IN),.sel(rst));
+/***/
 
 /* Instruction Cache */
 READ_ONLY_MEM I_CACHE (
   .clka(clk), // input clka
-  .addra(PC_OUT[11:0]), // input [11 : 0] addra
+  .addra(/*PC_OUT[11:0]*//***/I_CACHE_ADDR_IN/***/), // input [11 : 0] addra
   .douta(INSTRUCTION) // output [31 : 0] douta
 );
 
@@ -49,7 +60,7 @@ READ_ONLY_MEM I_CACHE (
 MUX_4to1 #(.WIDTH(5)) REGISTER_WRITE_SELECTOR_MUX(.in0(INSTRUCTION[25:21]),.in1(INSTRUCTION[20:16]),.in2(5'b11111),.in3(/*DONT CARE*/5'b00000),.out(WRITE_REG),.sel(RegDst));
 
 /* Register file */
-RegFile REG_FILE(.clk(clk),.rst(rst),.rsAdd(INSTRUCTION[25:21]),.rtAdd(INSTRUCTION[20:16]),.wrAdd(WRITE_REG),.wrData(REG_WRITE_DATA),.wrEnable(RegWrite),.rsOut(READ_REG1),.rtOut(READ_REG2),/**/.r0(r0),.r1(r1),.r2(r2),.r3(r3),.r4(r4),.r5(r5)/**/);
+RegFile REG_FILE(.clk(clk),.rst(rst),.rsAdd(INSTRUCTION[25:21]),.rtAdd(INSTRUCTION[20:16]),.wrAdd(WRITE_REG),.wrData(REG_WRITE_DATA),.wrEnable(RegWrite),.rsOut(READ_REG1),.rtOut(READ_REG2),/**/.r0(r0),.r1(r1),.r2(r2),.r3(r3),.r4(r4),.r5(r5),.r31(r31)/**/);
 /* regfile remaining wires: write data */
 
 /* Immdiate field sign extender modules */

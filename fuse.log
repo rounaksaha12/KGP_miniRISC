@@ -1,4 +1,4 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/top_check_primary_tb_isim_beh.exe -prj /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/top_check_primary_tb_beh.prj work.top_check_primary_tb work.glbl 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/lw_sw_test_isim_beh.exe -prj /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/lw_sw_test_beh.prj work.lw_sw_test work.glbl 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
@@ -19,13 +19,14 @@ Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/IS
 Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/BranchDecider.v" into library work
 Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/ALU_32bit.v" into library work
 Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_TOP_MODULE.v" into library work
-Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/top_check_primary_tb.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/lw_sw_test.v" into library work
 Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 85096 KB
-Fuse CPU Usage: 1270 ms
+Fuse Memory Usage: 85112 KB
+Fuse CPU Usage: 1040 ms
 Compiling module Register
+Compiling module MUX_2to1(WIDTH=12)
 Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
 Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
 Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
@@ -55,12 +56,12 @@ Compiling module MUX_4to1(WIDTH=1)
 Compiling module BranchDecider
 Compiling module JumpDecider
 Compiling module CPU_TOP_MODULE
-Compiling module top_check_primary_tb
+Compiling module lw_sw_test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 25 sub-compilation(s) to finish...
-Compiled 32 Verilog Units
-Built simulation executable /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/top_check_primary_tb_isim_beh.exe
-Fuse Memory Usage: 648524 KB
-Fuse CPU Usage: 1360 ms
-GCC CPU Usage: 3340 ms
+Waiting for 20 sub-compilation(s) to finish...
+Compiled 33 Verilog Units
+Built simulation executable /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/lw_sw_test_isim_beh.exe
+Fuse Memory Usage: 648568 KB
+Fuse CPU Usage: 1140 ms
+GCC CPU Usage: 3350 ms

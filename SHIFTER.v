@@ -27,9 +27,9 @@ output reg [31:0] SHIFTERout;
 /*
 shift type:
 00		left logical
-01		left arithmetic
-10		right logical
-11		right arithmetic
+01		right logical
+10		right arithmetic
+11		left arithmetic
 */
 
 always@(*)
@@ -44,9 +44,9 @@ else
 begin
 	case(ShiftTypeSHIFTER)
 			2'b00: SHIFTERout=a<<ShiftAmntSHIFTER;
-			2'b01: SHIFTERout=a<<<ShiftAmntSHIFTER;
-			2'b10: SHIFTERout=a>>ShiftAmntSHIFTER;
-			2'b11: SHIFTERout=$signed(a)>>>ShiftAmntSHIFTER;
+			2'b11: SHIFTERout=a<<<ShiftAmntSHIFTER;
+			2'b01: SHIFTERout=a>>ShiftAmntSHIFTER;
+			2'b10: SHIFTERout=$signed(a)>>>ShiftAmntSHIFTER;
 	endcase
 end
 

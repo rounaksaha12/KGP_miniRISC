@@ -92,23 +92,6 @@ module lw_sw_test;
 		// Initialize Inputs
 		clk = 1;
 		rst = 1;
-		RegWrite = 0;
-		ImmSel = 0;
-		ALUSrc = 0;
-		CompEnbl = 0;
-		ShiftAmntSel = 0;
-		ShiftEnbl = 0;
-		ShortBr = 0;
-		LongBr = 0;
-		MemRead = 0;
-		MemWrite = 0;
-		BranchReg = 0;
-		ALUOp = 0;
-		RegDst = 0;
-		ShiftType = 0;
-		BranchType = 0;
-		JumpType = 0;
-		MemToReg = 0;
 
 		// Wait 100 ns for global reset to finish
 		#100;

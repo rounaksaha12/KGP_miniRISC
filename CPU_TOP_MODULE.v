@@ -97,12 +97,21 @@ ALU_32bit ALUmain(
   );
 
 /* Data memory */
+/*
 READ_WRITE_MEM DATA_MEM (
   .clka(~clk), // input clka
   .ena(1'b1), // input ena
-  /* does the enable pin allow read? */
   .wea(MemWrite), // input [0 : 0] wea
   .addra(ALU_RES[12:0]), // input [12 : 0] addra
+  .dina(READ_REG2), // input [31 : 0] dina
+  .douta(MEM_READ_DATA) // output [31 : 0] douta
+);
+*/
+READ_WRITE_MEM DATA_MEM (
+  .clka(~clk), // input clka
+  .ena(1'b1), // input ena
+  .wea(MemWrite), // input [0 : 0] wea
+  .addra(ALU_RES[9:0]), // input [9 : 0] addra
   .dina(READ_REG2), // input [31 : 0] dina
   .douta(MEM_READ_DATA) // output [31 : 0] douta
 );

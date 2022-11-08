@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_TOP_WITH_CONTROL.xst" -ofn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_TOP_WITH_CONTROL.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim CPU_TOP_WITH_CONTROL.ngc CPU_TOP_WITH_CONTROL_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-4 "CPU_TOP_WITH_CONTROL.ngc" CPU_TOP_WITH_CONTROL.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o CPU_TOP_WITH_CONTROL_map.ncd CPU_TOP_WITH_CONTROL.ngd CPU_TOP_WITH_CONTROL.pcf 
+xst -intstyle ise -ifn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_TOP_WITH_CONTROL.xst" -ofn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_TOP_WITH_CONTROL.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-4 "CPU_TOP_WITH_CONTROL.ngc" CPU_TOP_WITH_CONTROL.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o CPU_TOP_WITH_CONTROL_map.ncd CPU_TOP_WITH_CONTROL.ngd CPU_TOP_WITH_CONTROL.pcf 

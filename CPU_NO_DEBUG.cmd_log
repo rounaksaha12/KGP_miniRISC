@@ -1,0 +1,53 @@
+xst -intstyle ise -ifn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.xst" -ofn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim CPU_NO_DEBUG.ngc CPU_NO_DEBUG_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-4 "CPU_NO_DEBUG.ngc" CPU_NO_DEBUG.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ngd CPU_NO_DEBUG.pcf 
+xst -intstyle ise -ifn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.xst" -ofn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.syr" 
+xst -intstyle ise -ifn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.xst" -ofn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim CPU_NO_DEBUG.ngc CPU_NO_DEBUG_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-4 "CPU_NO_DEBUG.ngc" CPU_NO_DEBUG.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ngd CPU_NO_DEBUG.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ncd CPU_NO_DEBUG.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU_NO_DEBUG.twx CPU_NO_DEBUG.ncd -o CPU_NO_DEBUG.twr CPU_NO_DEBUG.pcf 
+xst -intstyle ise -ifn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.xst" -ofn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim CPU_NO_DEBUG.ngc CPU_NO_DEBUG_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-4 "CPU_NO_DEBUG.ngc" CPU_NO_DEBUG.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ngd CPU_NO_DEBUG.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ncd CPU_NO_DEBUG.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU_NO_DEBUG.twx CPU_NO_DEBUG.ncd -o CPU_NO_DEBUG.twr CPU_NO_DEBUG.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc timing.ucf -p xc3s400-pq208-4 "CPU_NO_DEBUG.ngc" CPU_NO_DEBUG.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ngd CPU_NO_DEBUG.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ncd CPU_NO_DEBUG.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU_NO_DEBUG.twx CPU_NO_DEBUG.ncd -o CPU_NO_DEBUG.twr CPU_NO_DEBUG.pcf -ucf timing.ucf 
+xst -intstyle ise -ifn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.xst" -ofn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim CPU_NO_DEBUG.ngc CPU_NO_DEBUG_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc timing.ucf -p xc3s400-pq208-4 "CPU_NO_DEBUG.ngc" CPU_NO_DEBUG.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ngd CPU_NO_DEBUG.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ncd CPU_NO_DEBUG.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU_NO_DEBUG.twx CPU_NO_DEBUG.ncd -o CPU_NO_DEBUG.twr CPU_NO_DEBUG.pcf -ucf timing.ucf 
+xst -intstyle ise -ifn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.xst" -ofn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc timing.ucf -p xc3s400-pq208-4 "CPU_NO_DEBUG.ngc" CPU_NO_DEBUG.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ngd CPU_NO_DEBUG.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ncd CPU_NO_DEBUG.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU_NO_DEBUG.twx CPU_NO_DEBUG.ncd -o CPU_NO_DEBUG.twr CPU_NO_DEBUG.pcf -ucf timing.ucf 
+xst -intstyle ise -ifn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.xst" -ofn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.syr" 
+xst -intstyle ise -ifn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.xst" -ofn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim CPU_NO_DEBUG.ngc CPU_NO_DEBUG_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc timing.ucf -p xc3s400-pq208-4 "CPU_NO_DEBUG.ngc" CPU_NO_DEBUG.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ngd CPU_NO_DEBUG.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ncd CPU_NO_DEBUG.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU_NO_DEBUG.twx CPU_NO_DEBUG.ncd -o CPU_NO_DEBUG.twr CPU_NO_DEBUG.pcf -ucf timing.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc timing.ucf -p xc3s400-pq208-4 "CPU_NO_DEBUG.ngc" CPU_NO_DEBUG.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ngd CPU_NO_DEBUG.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ncd CPU_NO_DEBUG.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU_NO_DEBUG.twx CPU_NO_DEBUG.ncd -o CPU_NO_DEBUG.twr CPU_NO_DEBUG.pcf -ucf timing.ucf 
+xst -intstyle ise -ifn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.xst" -ofn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_NO_DEBUG.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim CPU_NO_DEBUG.ngc CPU_NO_DEBUG_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc timing.ucf -p xc3s400-pq208-4 "CPU_NO_DEBUG.ngc" CPU_NO_DEBUG.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ngd CPU_NO_DEBUG.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ncd CPU_NO_DEBUG.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU_NO_DEBUG.twx CPU_NO_DEBUG.ncd -o CPU_NO_DEBUG.twr CPU_NO_DEBUG.pcf -ucf timing.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-4 "CPU_NO_DEBUG.ngc" CPU_NO_DEBUG.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ngd CPU_NO_DEBUG.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_NO_DEBUG_map.ncd CPU_NO_DEBUG.ncd CPU_NO_DEBUG.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU_NO_DEBUG.twx CPU_NO_DEBUG.ncd -o CPU_NO_DEBUG.twr CPU_NO_DEBUG.pcf 

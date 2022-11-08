@@ -39,7 +39,7 @@ AND_32bit AND_ALU(.a(a),.b(b),.ANDout(ANDoutALU));
 XOR_32bit XOR_ALU(.a(a),.b(b),.XORout(XORoutALU));
 DIFF_32bit DIFF_ALU(.a(a),.b(b),.DIFFout(DIFFoutALU));
 
-MUX_4to1 PrimaryOutputMUX(.in1(ADDRoutALU),.in2(ANDoutALU),.in3(XORoutALU),.in0(DIFFoutALU),.out(PrimaryOutput),.sel(PrimaryOutputSel));
+MUX_4to1 PrimaryOutputMUX(.in1(ADDRoutALU),.in3(ANDoutALU),.in2(XORoutALU),.in0(DIFFoutALU),.out(PrimaryOutput),.sel(PrimaryOutputSel));
 MUX_2to1 ShifterInputMUX(.in0(PrimaryOutput),.in1(a),.out(ShifterInput),.sel(ShifterEnblALU)); 
 
 /*
@@ -56,8 +56,8 @@ shift operations
 SHIFTER SHIFTER_ALU(.a(ShifterInput),.ShiftTypeSHIFTER(ShiftTypeALU),.ShiftAmntSHIFTER(ShiftAmntALU),.ShifterEnblSHIFTER(ShifterEnblALU),.SHIFTERout(ALUOut));
 
 
-assign ALUzero=(ALUOut==32'd0)?1:0;
-assign MSB=ALUOut[31];
+assign ALUzero=(a==32'd0)?1:0;
+assign MSB=a[31];
 
 
 endmodule

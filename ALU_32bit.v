@@ -27,7 +27,7 @@ input AddrSrcBSel,ShifterEnblALU,ShifterInputSel;
 output [31:0] ALUOut;
 output MSB,ALUzero,ALUc_out;
 
-wire [31:0] AddrSrcB,twos_comp_b,ADDRoutALU,ANDoutALU,XORoutALU,DIFFoutALU,PrimaryOutput,ShifterInput;
+wire [31:0] AddrSrcB,/*twos_comp_b,*/ADDRoutALU,ANDoutALU,XORoutALU,DIFFoutALU,PrimaryOutput,ShifterInput;
 
 /* TWOS_COMPL_32bit TWOS_COMPL_ALU(.a(b),.TWOS_COMPLout(twos_comp_b)); */ /*revision 18:27 26.10.22*/
 /* Separate 2's complement module not required */

@@ -37,6 +37,32 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="BranchDecider.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="BranchDecider.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="BranchDecider.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="CPU_FPGA.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="CPU_FPGA.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="CPU_FPGA.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="CPU_FPGA.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="CPU_FPGA.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="CPU_FPGA.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="CPU_FPGA.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CPU_FPGA.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="CPU_FPGA.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="CPU_FPGA.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="CPU_FPGA.xst"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CPU_FPGA_TB_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="CPU_FPGA_TB_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="CPU_FPGA_TB_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="CPU_FPGA_TB_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="CPU_FPGA_envsettings.html"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="CPU_FPGA_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="CPU_FPGA_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="CPU_FPGA_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="CPU_FPGA_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="CPU_FPGA_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="CPU_FPGA_ngdbuild.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="CPU_FPGA_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="CPU_FPGA_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="CPU_FPGA_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="CPU_FPGA_xst.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="CPU_NO_DEBUG.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="CPU_NO_DEBUG.cmd_log"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="CPU_NO_DEBUG.lso"/>
@@ -109,6 +135,9 @@
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="JumpDecider.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="JumpDecider.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="JumpDecider.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX_10to1.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MUX_10to1.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="MUX_10to1.xst"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="MUX_2to1.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="MUX_2to1.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="MUX_2to1.xst"/>
@@ -168,10 +197,12 @@
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="lw_sw_test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="lw_sw_test_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
-    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/CPU_NO_DEBUG_synthesis.nlf"/>
-    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="netgen/synthesis/CPU_NO_DEBUG_synthesis.v"/>
-    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/CPU_TOP_WITH_CONTROL_synthesis.nlf"/>
-    <file xil_pn:branch="PostSynthSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="netgen/synthesis/CPU_TOP_WITH_CONTROL_synthesis.v"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/CPU_FPGA_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="netgen/synthesis/CPU_FPGA_synthesis.v"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/CPU_NO_DEBUG_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="netgen/synthesis/CPU_NO_DEBUG_synthesis.v"/>
+    <file xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/synthesis/CPU_TOP_WITH_CONTROL_synthesis.nlf"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="netgen/synthesis/CPU_TOP_WITH_CONTROL_synthesis.v"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="register_tb_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="register_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="shift_tb_beh.prj"/>
@@ -204,27 +235,32 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1667926448" xil_pn:in_ck="5017015136884785784" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1667926448">
+    <transform xil_pn:end_ts="1667970145" xil_pn:in_ck="-5476015749544002635" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1667970145">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ADDR_32bit.v"/>
       <outfile xil_pn:name="ALU_32bit.v"/>
       <outfile xil_pn:name="ALU_tb.v"/>
       <outfile xil_pn:name="AND_32bit.v"/>
       <outfile xil_pn:name="BranchDecider.v"/>
-      <outfile xil_pn:name="CPU_NO_DEBUG.v"/>
+      <outfile xil_pn:name="CPU_FPGA.v"/>
+      <outfile xil_pn:name="CPU_FPGA_TB.v"/>
       <outfile xil_pn:name="CPU_TOP_MODULE.v"/>
       <outfile xil_pn:name="CPU_TOP_WITH_CONTROL.v"/>
       <outfile xil_pn:name="DIFF_32bit.v"/>
       <outfile xil_pn:name="IS_ZERO.v"/>
       <outfile xil_pn:name="JumpDecider.v"/>
+      <outfile xil_pn:name="MUX_10to1.v"/>
       <outfile xil_pn:name="MUX_2to1.v"/>
       <outfile xil_pn:name="MUX_4to1.v"/>
       <outfile xil_pn:name="RegFile.v"/>
       <outfile xil_pn:name="Register.v"/>
       <outfile xil_pn:name="SHIFTER.v"/>
       <outfile xil_pn:name="SIGN_EXTND.v"/>
-      <outfile xil_pn:name="TWOS_COMPL_32bit.v"/>
       <outfile xil_pn:name="XOR_32bit.v"/>
       <outfile xil_pn:name="bcy_check_tb_2.v"/>
       <outfile xil_pn:name="bram_check.v"/>
@@ -247,45 +283,49 @@
       <outfile xil_pn:name="top_with_control_pri_shft.v"/>
       <outfile xil_pn:name="twc_2.v"/>
     </transform>
-    <transform xil_pn:end_ts="1667883623" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-1909235245951888842" xil_pn:start_ts="1667883623">
+    <transform xil_pn:end_ts="1667935806" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="6656926793001190129" xil_pn:start_ts="1667935806">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1667883623" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-8505347141332484626" xil_pn:start_ts="1667883623">
+    <transform xil_pn:end_ts="1667935806" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="195646782842225833" xil_pn:start_ts="1667935806">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1667928480" xil_pn:in_ck="8625849582176093741" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-8561011958502666014" xil_pn:start_ts="1667928479">
+    <transform xil_pn:end_ts="1667971181" xil_pn:in_ck="8625849582176093741" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-3219237539363605806" xil_pn:start_ts="1667971181">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
       <outfile xil_pn:name="ipcore_dir/READ_ONLY_MEM.ngc"/>
       <outfile xil_pn:name="ipcore_dir/READ_ONLY_MEM.v"/>
       <outfile xil_pn:name="ipcore_dir/READ_WRITE_MEM.ngc"/>
       <outfile xil_pn:name="ipcore_dir/READ_WRITE_MEM.v"/>
     </transform>
-    <transform xil_pn:end_ts="1667928480" xil_pn:in_ck="8929433820462951293" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1667928480">
+    <transform xil_pn:end_ts="1667971181" xil_pn:in_ck="-507103745303838502" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1667971181">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="ADDR_32bit.v"/>
       <outfile xil_pn:name="ALU_32bit.v"/>
       <outfile xil_pn:name="ALU_tb.v"/>
       <outfile xil_pn:name="AND_32bit.v"/>
       <outfile xil_pn:name="BranchDecider.v"/>
-      <outfile xil_pn:name="CPU_NO_DEBUG.v"/>
+      <outfile xil_pn:name="CPU_FPGA.v"/>
+      <outfile xil_pn:name="CPU_FPGA_TB.v"/>
       <outfile xil_pn:name="CPU_TOP_MODULE.v"/>
       <outfile xil_pn:name="CPU_TOP_WITH_CONTROL.v"/>
       <outfile xil_pn:name="DIFF_32bit.v"/>
       <outfile xil_pn:name="IS_ZERO.v"/>
       <outfile xil_pn:name="JumpDecider.v"/>
+      <outfile xil_pn:name="MUX_10to1.v"/>
       <outfile xil_pn:name="MUX_2to1.v"/>
       <outfile xil_pn:name="MUX_4to1.v"/>
       <outfile xil_pn:name="RegFile.v"/>
       <outfile xil_pn:name="Register.v"/>
       <outfile xil_pn:name="SHIFTER.v"/>
       <outfile xil_pn:name="SIGN_EXTND.v"/>
-      <outfile xil_pn:name="TWOS_COMPL_32bit.v"/>
       <outfile xil_pn:name="XOR_32bit.v"/>
       <outfile xil_pn:name="bcy_check_tb_2.v"/>
       <outfile xil_pn:name="bram_check.v"/>
@@ -310,38 +350,116 @@
       <outfile xil_pn:name="top_with_control_pri_shft.v"/>
       <outfile xil_pn:name="twc_2.v"/>
     </transform>
-    <transform xil_pn:end_ts="1667928482" xil_pn:in_ck="8929433820462951293" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-7081783069941822552" xil_pn:start_ts="1667928480">
+    <transform xil_pn:end_ts="1667971184" xil_pn:in_ck="-507103745303838502" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="5745981978743320478" xil_pn:start_ts="1667971181">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="CPU_FPGA_TB_beh.prj"/>
+      <outfile xil_pn:name="CPU_FPGA_TB_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="twc_2_beh.prj"/>
-      <outfile xil_pn:name="twc_2_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1667928482" xil_pn:in_ck="3818595419223606971" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="195549003528132479" xil_pn:start_ts="1667928482">
+    <transform xil_pn:end_ts="1667971184" xil_pn:in_ck="-2535086950647784316" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-5908666685396301227" xil_pn:start_ts="1667971184">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="CPU_FPGA_TB_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
-      <outfile xil_pn:name="twc_2_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1667663739" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1667663739">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1667929757" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6546749650518834647" xil_pn:start_ts="1667929757">
+    <transform xil_pn:end_ts="1667934537" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8577017426173761964" xil_pn:start_ts="1667934537">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
+    </transform>
+    <transform xil_pn:end_ts="1667939622" xil_pn:in_ck="8625849582176093741" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-3219237539363605806" xil_pn:start_ts="1667939622">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="ipcore_dir/READ_ONLY_MEM.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/READ_ONLY_MEM.v"/>
+      <outfile xil_pn:name="ipcore_dir/READ_WRITE_MEM.ngc"/>
+      <outfile xil_pn:name="ipcore_dir/READ_WRITE_MEM.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1667934537" xil_pn:in_ck="-637561563814705877" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1667934537">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1667934537" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-8221103049002187876" xil_pn:start_ts="1667934537">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1667934537" xil_pn:in_ck="-637561563814705877" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-6388418249795389316" xil_pn:start_ts="1667934537">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1667934537" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="2084503611404223836" xil_pn:start_ts="1667934537">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1667939642" xil_pn:in_ck="-8874595541723516145" xil_pn:name="TRANEXT_xstsynthesize_spartan3" xil_pn:prop_ck="8397125771831145170" xil_pn:start_ts="1667939622">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1667939642" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4784892102965191239" xil_pn:start_ts="1667939642">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1667939651" xil_pn:in_ck="3339789608547394601" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-3243792824025106704" xil_pn:start_ts="1667939647">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1667939662" xil_pn:in_ck="4738734390807471773" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-4775573358763839746" xil_pn:start_ts="1667939656">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="NotReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1667939644" xil_pn:in_ck="3339789608547394601" xil_pn:name="TRAN_postSynthesisSimModel" xil_pn:prop_ck="3717978165269466361" xil_pn:start_ts="1667939642">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
     </transform>
   </transforms>
 

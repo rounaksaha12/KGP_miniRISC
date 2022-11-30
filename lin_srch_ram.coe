@@ -1,6 +1,6 @@
 memory_initialization_radix=10;
 memory_initialization_vector=
-7,
+42,
 -23,
 42,
 -47,

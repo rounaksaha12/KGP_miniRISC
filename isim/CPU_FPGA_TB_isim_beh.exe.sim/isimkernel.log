@@ -1,0 +1,29 @@
+Command line:
+   CPU_FPGA_TB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  41497
+
+Wed Nov  9 10:49:46 2022
+
+
+ Elaboration Time: 0.02 sec
+
+ Current Memory Usage: 188.613 Meg
+
+ Total Signals          : 541
+ Total Nets             : 2733
+ Total Signal Drivers   : 207
+ Total Blocks           : 70
+ Total Primitive Blocks : 59
+ Total Processes        : 236
+ Total Traceable Variables  : 703
+ Total Scalar Nets and Variables : 225563
+Total Line Count : 978
+
+ Total Simulation Time: 0.04 sec
+
+ Current Memory Usage: 264.114 Meg
+
+Wed Nov  9 10:50:25 2022
+

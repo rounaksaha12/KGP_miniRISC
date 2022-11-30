@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_FPGA.xst" -ofn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_FPGA.syr" 
+xst -intstyle ise -ifn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_FPGA.xst" -ofn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_FPGA.syr" 
+xst -intstyle ise -ifn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_FPGA.xst" -ofn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_FPGA.syr" 
+xst -intstyle ise -ifn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_FPGA.xst" -ofn "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_FPGA.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim CPU_FPGA.ngc CPU_FPGA_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s400-pq208-4 "CPU_FPGA.ngc" CPU_FPGA.ngd  
+map -intstyle ise -p xc3s400-pq208-4 -cm area -ir off -pr off -c 100 -o CPU_FPGA_map.ncd CPU_FPGA.ngd CPU_FPGA.pcf 

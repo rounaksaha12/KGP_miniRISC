@@ -1,4 +1,4 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/twc_2_isim_beh.exe -prj /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/twc_2_beh.prj work.twc_2 work.glbl 
+Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_FPGA_TB_isim_beh.exe -prj /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_FPGA_TB_beh.prj work.CPU_FPGA_TB work.glbl 
 ISim P.20131013 (signature 0xfbc00daa)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
@@ -13,19 +13,20 @@ Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/IS
 Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/SIGN_EXTND.v" into library work
 Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/Register.v" into library work
 Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/RegFile.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/MUX_10to1.v" into library work
 Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/JumpDecider.v" into library work
 Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/ipcore_dir/READ_WRITE_MEM.v" into library work
 Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/ipcore_dir/READ_ONLY_MEM.v" into library work
 Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/control.v" into library work
 Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/BranchDecider.v" into library work
 Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/ALU_32bit.v" into library work
-Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_TOP_WITH_CONTROL.v" into library work
-Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/twc_2.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_FPGA.v" into library work
+Analyzing Verilog file "/home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_FPGA_TB.v" into library work
 Analyzing Verilog file "/opt/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 85084 KB
-Fuse CPU Usage: 1120 ms
+Fuse Memory Usage: 85112 KB
+Fuse CPU Usage: 1180 ms
 Compiling module control
 Compiling module Register
 Compiling module MUX_2to1(WIDTH=12)
@@ -57,13 +58,14 @@ Compiling module Register(WIDTH=1)
 Compiling module MUX_4to1(WIDTH=1)
 Compiling module BranchDecider
 Compiling module JumpDecider
-Compiling module CPU_TOP_WITH_CONTROL
-Compiling module twc_2
+Compiling module MUX_10to1
+Compiling module CPU_FPGA
+Compiling module CPU_FPGA_TB
 Compiling module glbl
 Time Resolution for simulation is 1ps.
-Waiting for 25 sub-compilation(s) to finish...
-Compiled 34 Verilog Units
-Built simulation executable /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/twc_2_isim_beh.exe
-Fuse Memory Usage: 648840 KB
-Fuse CPU Usage: 1230 ms
-GCC CPU Usage: 3540 ms
+Waiting for 23 sub-compilation(s) to finish...
+Compiled 35 Verilog Units
+Built simulation executable /home/rounak/Documents/SEM_5/COA/verilog/Verilog Demo/ISE Project/KGP_miniRISC/CPU_FPGA_TB_isim_beh.exe
+Fuse Memory Usage: 648868 KB
+Fuse CPU Usage: 1290 ms
+GCC CPU Usage: 3550 ms
